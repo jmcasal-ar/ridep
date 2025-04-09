@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes - RED DEMOCRACIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50 text-navy-800 font-sans">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-navy-800">RED<span class="text-burgundy-700">DEMOCRACIA</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            La Red
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#quienes-somos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Quiénes Somos</a>
+                            <a href="integrantes.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Integrantes</a>
+                            <a href="index.html#aliados" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Aliados</a>
+                            <a href="index.html#contacto" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Investigación
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#proyectos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Proyectos</a>
+                            <a href="reuniones.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Reuniones</a>
+                            <a href="index.html#repositorios" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Repositorios</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Publicaciones
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#publicaciones-academicas" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Publicaciones Académicas</a>
+                            <a href="index.html#articulos-opinion" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Artículos de Opinión</a>
+                            <a href="biblioteca.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Biblioteca</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Noticias y Actividades
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#noticias" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Noticias</a>
+                            <a href="index.html#eventos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Eventos</a>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- Login Button -->
+                <div class="hidden md:block">
+                    <button class="border border-navy-700 text-navy-800 hover:bg-navy-50 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2">
+                        Iniciar Sesión
+                    </button>
+                </div>
+                
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button type="button" class="text-navy-800 mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden bg-white shadow-lg py-2 mobile-menu hidden">
+            <div class="container mx-auto px-4">
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">La Red</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#quienes-somos" class="block py-2 text-navy-700 hover:text-navy-500">Quiénes Somos</a>
+                        <a href="integrantes.html" class="block py-2 text-navy-700 hover:text-navy-500">Integrantes</a>
+                        <a href="index.html#aliados" class="block py-2 text-navy-700 hover:text-navy-500">Aliados</a>
+                        <a href="index.html#contacto" class="block py-2 text-navy-700 hover:text-navy-500">Contacto</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Investigación</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#proyectos" class="block py-2 text-navy-700 hover:text-navy-500">Proyectos</a>
+                        <a href="reuniones.html" class="block py-2 text-navy-700 hover:text-navy-500">Reuniones</a>
+                        <a href="index.html#repositorios" class="block py-2 text-navy-700 hover:text-navy-500">Repositorios</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Publicaciones</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#publicaciones-academicas" class="block py-2 text-navy-700 hover:text-navy-500">Publicaciones Académicas</a>
+                        <a href="index.html#articulos-opinion" class="block py-2 text-navy-700 hover:text-navy-500">Artículos de Opinión</a>
+                        <a href="biblioteca.html" class="block py-2 text-navy-700 hover:text-navy-500">Biblioteca</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Noticias y Actividades</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#noticias" class="block py-2 text-navy-700 hover:text-navy-500">Noticias</a>
+                        <a href="index.html#eventos" class="block py-2 text-navy-700 hover:text-navy-500">Eventos</a>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <button class="w-full border border-navy-700 text-navy-800 hover:bg-navy-50 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2">
+                        Iniciar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="py-12 bg-navy-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">Integrantes de la Red</h1>
+                <p class="text-lg text-navy-600 max-w-3xl mb-12">Conoce a los investigadores y académicos que conforman nuestra red de investigación sobre democracia y espacio público.</p>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <section class="py-8 border-b border-gray-200">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="text-lg font-semibold text-navy-800">Filtrar integrantes</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="filter-button active px-4 py-2 text-sm rounded-md">Todos</button>
+                        <button class="filter-button px-4 py-2 text-sm rounded-md">Investigadores Senior</button>
+                        <button class="filter-button px-4 py-2 text-sm rounded-md">Investigadores Asociados</button>
+                        <button class="filter-button px-4 py-2 text-sm rounded-md">Asistentes de Investigación</button>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            placeholder="Buscar integrantes..." 
+                            class="w-full px-4 py-2 pl-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                        >
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i data-feather="search" class="h-5 w-5 text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrantes Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Integrante 1 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dra. María González" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dra. María González</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Directora Académica</p>
+                            <p class="text-navy-600 text-sm mt-2">Universidad Nacional</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Democracia deliberativa</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 2 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dr. Carlos Ramírez" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dr. Carlos Ramírez</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Investigador Senior</p>
+                            <p class="text-navy-600 text-sm mt-2">Instituto de Estudios Políticos</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Teoría democrática</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 3 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dra. Sofía Martínez" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dra. Sofía Martínez</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Investigadora Asociada</p>
+                            <p class="text-navy-600 text-sm mt-2">Universidad del Norte</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Espacio público digital</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 4 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dr. Javier López" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dr. Javier López</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Investigador</p>
+                            <p class="text-navy-600 text-sm mt-2">Centro de Investigaciones Sociales</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Ciudadanía y participación</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 5 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dra. Ana García" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dra. Ana García</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Investigadora Senior</p>
+                            <p class="text-navy-600 text-sm mt-2">Universidad del Sur</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Movimientos sociales y democracia</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 6 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dr. Roberto Martínez" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dr. Roberto Martínez</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Investigador Asociado</p>
+                            <p class="text-navy-600 text-sm mt-2">Universidad Nacional</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Teoría política democrática</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 7 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dra. Laura Sánchez" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dra. Laura Sánchez</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Asistente de Investigación</p>
+                            <p class="text-navy-600 text-sm mt-2">Centro de Estudios Democráticos</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Educación cívica y ciudadanía</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Integrante 8 -->
+                    <div class="card">
+                        <div class="relative h-60 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80" 
+                                alt="Dr. Miguel Torres" 
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-navy-800">Dr. Miguel Torres</h3>
+                            <p class="text-burgundy-700 font-medium text-sm">Asistente de Investigación</p>
+                            <p class="text-navy-600 text-sm mt-2">Instituto de Estudios Políticos</p>
+                            <div class="mt-3 pt-3 border-t border-gray-100">
+                                <span class="text-xs font-medium text-navy-500 uppercase">Línea de investigación:</span>
+                                <p class="text-navy-700">Democracia y tecnología</p>
+                            </div>
+                            <div class="mt-4 flex space-x-3">
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="mail" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="linkedin" class="h-5 w-5"></i>
+                                </a>
+                                <a href="#" class="text-navy-600 hover:text-navy-800">
+                                    <i data-feather="twitter" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="mt-12 flex justify-center">
+                    <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-navy-500 hover:bg-gray-50">
+                            <span class="sr-only">Anterior</span>
+                            <i data-feather="chevron-left" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" aria-current="page" class="z-10 bg-burgundy-700 border-burgundy-700 text-white relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                            1
+                        </a>
+                        <a href="#" class="bg-white border-gray-300 text-navy-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                            2
+                        </a>
+                        <a href="#" class="bg-white border-gray-300 text-navy-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                            3
+                        </a>
+                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-navy-500 hover:bg-gray-50">
+                            <span class="sr-only">Siguiente</span>
+                            <i data-feather="chevron-right" class="h-5 w-5"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Our Team Section -->
+        <section class="py-12 bg-navy-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold text-navy-800 mb-4">¿Quieres formar parte de nuestra red?</h2>
+                    <p class="text-navy-600 mb-8">Si eres investigador o académico y trabajas en temas relacionados con democracia y espacio público, te invitamos a formar parte de nuestra red.</p>
+                    <a href="index.html#contacto" class="inline-flex items-center justify-center bg-burgundy-700 hover:bg-burgundy-800 text-white rounded-md px-6 py-3 font-medium transition-colors">
+                        <i data-feather="user-plus" class="h-5 w-5 mr-2"></i>
+                        Solicitar información
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div>
+                    <div class="text-xl font-bold mb-4">RED<span class="text-burgundy-400">DEMOCRACIA</span></div>
+                    <p class="text-navy-100 mb-4">
+                        Red Académica de Investigación sobre Democracia y Espacio Público
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="youtube" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links 1 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">La Red</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#quienes-somos" class="text-navy-100 hover:text-white transition-colors">Quiénes Somos</a></li>
+                        <li><a href="integrantes.html" class="text-navy-100 hover:text-white transition-colors">Integrantes</a></li>
+                        <li><a href="index.html#aliados" class="text-navy-100 hover:text-white transition-colors">Aliados</a></li>
+                        <li><a href="index.html#contacto" class="text-navy-100 hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 2 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Investigación</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#proyectos" class="text-navy-100 hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="reuniones.html" class="text-navy-100 hover:text-white transition-colors">Reuniones</a></li>
+                        <li><a href="index.html#repositorios" class="text-navy-100 hover:text-white transition-colors">Repositorios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 3 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Publicaciones</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#publicaciones-academicas" class="text-navy-100 hover:text-white transition-colors">Publicaciones Académicas</a></li>
+                        <li><a href="index.html#articulos-opinion" class="text-navy-100 hover:text-white transition-colors">Artículos de Opinión</a></li>
+                        <li><a href="biblioteca.html" class="text-navy-100 hover:text-white transition-colors">Biblioteca</a></li>
+                        <li><a href="index.html#noticias" class="text-navy-100 hover:text-white transition-colors">Noticias</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-navy-800 mt-8 pt-8 text-center text-navy-300 text-sm">
+                <p>&copy; <span id="current-year"></span> Red Académica de Investigación sobre Democracia y Espacio Público. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuIcon = mobileMenuButton.querySelector('svg');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle between menu and x icon
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenuIcon.setAttribute('data-feather', 'menu');
+                } else {
+                    mobileMenuIcon.setAttribute('data-feather', 'x');
+                }
+                feather.replace();
+            });
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Filter buttons functionality
+            const filterButtons = document.querySelectorAll('.filter-button');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.remove('bg-burgundy-700');
+                        btn.classList.remove('text-white');
+                        btn.classList.add('bg-gray-100');
+                        btn.classList.add('text-navy-700');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    this.classList.add('bg-burgundy-700');
+                    this.classList.add('text-white');
+                    this.classList.remove('bg-gray-100');
+                    this.classList.remove('text-navy-700');
+                    
+                    // Filter functionality would go here in a real implementation
+                    // For this demo, we'll just log the selected filter
+                    console.log('Filter selected:', this.textContent.trim());
+                });
+            });
+            
+            // Initialize first button as active
+            filterButtons[0].classList.add('bg-burgundy-700');
+            filterButtons[0].classList.add('text-white');
+            filterButtons[0].classList.remove('bg-gray-100');
+            filterButtons[0].classList.remove('text-navy-700');
+        });
+    </script>
+</body>
+</html>

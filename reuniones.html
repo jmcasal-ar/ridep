@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuniones y Calendario - RED DEMOCRACIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50 text-navy-800 font-sans">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-navy-800">RED<span class="text-burgundy-700">DEMOCRACIA</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            La Red
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#quienes-somos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Quiénes Somos</a>
+                            <a href="index.html#integrantes" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Integrantes</a>
+                            <a href="index.html#aliados" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Aliados</a>
+                            <a href="index.html#contacto" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Investigación
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#proyectos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Proyectos</a>
+                            <a href="reuniones.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Reuniones</a>
+                            <a href="index.html#repositorios" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Repositorios</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Publicaciones
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#publicaciones-academicas" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Publicaciones Académicas</a>
+                            <a href="index.html#articulos-opinion" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Artículos de Opinión</a>
+                            <a href="biblioteca.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Biblioteca</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Noticias y Actividades
+                            <i data-feather="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#noticias" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Noticias</a>
+                            <a href="index.html#eventos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Eventos</a>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- Login Button -->
+                <div class="hidden md:block">
+                    <button class="border border-navy-700 text-navy-800 hover:bg-navy-50 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2">
+                        Iniciar Sesión
+                    </button>
+                </div>
+                
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button type="button" class="text-navy-800 mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden bg-white shadow-lg py-2 mobile-menu hidden">
+            <div class="container mx-auto px-4">
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">La Red</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#quienes-somos" class="block py-2 text-navy-700 hover:text-navy-500">Quiénes Somos</a>
+                        <a href="index.html#integrantes" class="block py-2 text-navy-700 hover:text-navy-500">Integrantes</a>
+                        <a href="index.html#aliados" class="block py-2 text-navy-700 hover:text-navy-500">Aliados</a>
+                        <a href="index.html#contacto" class="block py-2 text-navy-700 hover:text-navy-500">Contacto</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Investigación</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#proyectos" class="block py-2 text-navy-700 hover:text-navy-500">Proyectos</a>
+                        <a href="reuniones.html" class="block py-2 text-navy-700 hover:text-navy-500">Reuniones</a>
+                        <a href="index.html#repositorios" class="block py-2 text-navy-700 hover:text-navy-500">Repositorios</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Publicaciones</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#publicaciones-academicas" class="block py-2 text-navy-700 hover:text-navy-500">Publicaciones Académicas</a>
+                        <a href="index.html#articulos-opinion" class="block py-2 text-navy-700 hover:text-navy-500">Artículos de Opinión</a>
+                        <a href="biblioteca.html" class="block py-2 text-navy-700 hover:text-navy-500">Biblioteca</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Noticias y Actividades</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#noticias" class="block py-2 text-navy-700 hover:text-navy-500">Noticias</a>
+                        <a href="index.html#eventos" class="block py-2 text-navy-700 hover:text-navy-500">Eventos</a>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <button class="w-full border border-navy-700 text-navy-800 hover:bg-navy-50 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2">
+                        Iniciar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="py-12 bg-navy-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">Reuniones y Calendario</h1>
+                <p class="text-lg text-navy-600 max-w-3xl mb-12">Consulta nuestro calendario de reuniones, seminarios, conferencias y otros eventos académicos organizados por la Red.</p>
+            </div>
+        </div>
+
+        <!-- Buttons for Calendar Views -->
+        <section class="py-8 border-b border-gray-200">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap gap-4 items-center justify-between">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="view-button active px-4 py-2 rounded-md text-sm font-medium">Mes</button>
+                        <button class="view-button px-4 py-2 rounded-md text-sm font-medium">Agenda</button>
+                        <button class="view-button px-4 py-2 rounded-md text-sm font-medium">Próximos</button>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button id="prev-month" class="text-navy-600 hover:text-navy-800 p-2 rounded-full hover:bg-navy-50">
+                            <i data-feather="chevron-left" class="h-5 w-5"></i>
+                        </button>
+                        <h2 id="current-month-display" class="text-lg font-semibold text-navy-800 min-w-[150px] text-center">Abril 2024</h2>
+                        <button id="next-month" class="text-navy-600 hover:text-navy-800 p-2 rounded-full hover:bg-navy-50">
+                            <i data-feather="chevron-right" class="h-5 w-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar View - Month -->
+        <section id="month-view" class="py-8">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Calendar Grid -->
+                <div class="calendar-grid bg-white rounded-lg shadow overflow-hidden">
+                    <!-- Calendar Header -->
+                    <div class="grid grid-cols-7 bg-navy-800 text-white text-center py-2">
+                        <div>Domingo</div>
+                        <div>Lunes</div>
+                        <div>Martes</div>
+                        <div>Miércoles</div>
+                        <div>Jueves</div>
+                        <div>Viernes</div>
+                        <div>Sábado</div>
+                    </div>
+                    
+                    <!-- Calendar Body -->
+                    <div class="grid grid-cols-7 text-sm">
+                        <!-- Week 1 -->
+                        <div class="min-h-[100px] p-2 border border-gray-100 bg-gray-50 text-gray-400">31</div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">1</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">2</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">3</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">4</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">5</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">6</span>
+                        </div>
+                        
+                        <!-- Week 2 -->
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">7</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">8</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">9</span>
+                            <div class="mt-1 p-1 bg-blue-100 text-blue-800 text-xs rounded overflow-hidden">10:00 - Reunión Equipo</div>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">10</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">11</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">12</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">13</span>
+                        </div>
+                        
+                        <!-- Week 3 -->
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">14</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">15</span>
+                            <div class="mt-1 p-1 bg-green-100 text-green-800 text-xs rounded overflow-hidden">16:00 - Seminario</div>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">16</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">17</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">18</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">19</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">20</span>
+                        </div>
+                        
+                        <!-- Week 4 -->
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">21</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">22</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">23</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">24</span>
+                            <div class="mt-1 p-1 bg-purple-100 text-purple-800 text-xs rounded overflow-hidden">11:00 - Conferencia</div>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">25</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">26</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">27</span>
+                        </div>
+                        
+                        <!-- Week 5 -->
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">28</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">29</span>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100">
+                            <span class="text-navy-800 font-medium">30</span>
+                            <div class="mt-1 p-1 bg-burgundy-100 text-burgundy-800 text-xs rounded overflow-hidden">15:00 - Reunión General</div>
+                        </div>
+                        <div class="min-h-[100px] p-2 border border-gray-100 bg-gray-50 text-gray-400">1</div>
+                        <div class="min-h-[100px] p-2 border border-gray-100 bg-gray-50 text-gray-400">2</div>
+                        <div class="min-h-[100px] p-2 border border-gray-100 bg-gray-50 text-gray-400">3</div>
+                        <div class="min-h-[100px] p-2 border border-gray-100 bg-gray-50 text-gray-400">4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda View - Initially Hidden -->
+        <section id="agenda-view" class="py-8 hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <ul class="divide-y divide-gray-200">
+                        <!-- Event 1 -->
+                        <li class="p-4 hover:bg-navy-50 transition-colors">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-16 text-center">
+                                    <span class="text-burgundy-700 font-semibold">9 Abr</span>
+                                    <div class="text-navy-500 text-sm">Martes</div>
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-lg font-semibold text-navy-800">Reunión Equipo de Investigación</h3>
+                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">10:00 - 12:00</span>
+                                    </div>
+                                    <p class="text-navy-600 mt-1">Revisión de avances del proyecto "Democracia Digital y Participación Ciudadana"</p>
+                                    <div class="mt-2 text-sm text-navy-500">
+                                        <div class="flex items-center">
+                                            <i data-feather="map-pin" class="h-4 w-4 mr-1"></i>
+                                            <span>Sala de Juntas, Edificio Central</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Event 2 -->
+                        <li class="p-4 hover:bg-navy-50 transition-colors">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-16 text-center">
+                                    <span class="text-burgundy-700 font-semibold">15 Abr</span>
+                                    <div class="text-navy-500 text-sm">Lunes</div>
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-lg font-semibold text-navy-800">Seminario: Desafíos de la Democracia en América Latina</h3>
+                                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">16:00 - 18:30</span>
+                                    </div>
+                                    <p class="text-navy-600 mt-1">Seminario abierto con ponentes invitados de la Universidad del Norte y del Instituto de Estudios Políticos.</p>
+                                    <div class="mt-2 text-sm text-navy-500">
+                                        <div class="flex items-center">
+                                            <i data-feather="map-pin" class="h-4 w-4 mr-1"></i>
+                                            <span>Auditorio Principal, Campus Central</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Event 3 -->
+                        <li class="p-4 hover:bg-navy-50 transition-colors">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-16 text-center">
+                                    <span class="text-burgundy-700 font-semibold">24 Abr</span>
+                                    <div class="text-navy-500 text-sm">Miércoles</div>
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-lg font-semibold text-navy-800">Conferencia: "Crisis de Representación Política"</h3>
+                                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">11:00 - 13:00</span>
+                                    </div>
+                                    <p class="text-navy-600 mt-1">Conferencia magistral a cargo del Dr. Carlos Ramírez sobre los desafíos contemporáneos de la representación política.</p>
+                                    <div class="mt-2 text-sm text-navy-500">
+                                        <div class="flex items-center">
+                                            <i data-feather="map-pin" class="h-4 w-4 mr-1"></i>
+                                            <span>Centro Cultural, Sala 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Event 4 -->
+                        <li class="p-4 hover:bg-navy-50 transition-colors">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-16 text-center">
+                                    <span class="text-burgundy-700 font-semibold">30 Abr</span>
+                                    <div class="text-navy-500 text-sm">Martes</div>
+                                </div>
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-lg font-semibold text-navy-800">Reunión General de la Red</h3>
+                                        <span class="bg-burgundy-100 text-burgundy-800 text-xs font-medium px-2.5 py-0.5 rounded">15:00 - 17:00</span>
+                                    </div>
+                                    <p class="text-navy-600 mt-1">Reunión mensual de coordinación con todos los miembros de la Red. Presentación de avances y planificación de actividades.</p>
+                                    <div class="mt-2 text-sm text-navy-500">
+                                        <div class="flex items-center">
+                                            <i data-feather="map-pin" class="h-4 w-4 mr-1"></i>
+                                            <span>Sala de Conferencias, Edificio de Posgrado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events View - Initially Hidden -->
+        <section id="upcoming-view" class="py-8 hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Event Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="text-burgundy-700 font-bold text-xl">9 Abr, 2024</div>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">10:00 - 12:00</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-navy-800 mb-2">Reunión Equipo de Investigación</h3>
+                            <p class="text-navy-600 mb-4">Revisión de avances del proyecto "Democracia Digital y Participación Ciudadana"</p>
+                            <div class="flex items-center text-navy-500 mb-2">
+                                <i data-feather="map-pin" class="h-4 w-4 mr-2"></i>
+                                <span>Sala de Juntas, Edificio Central</span>
+                            </div>
+                            <div class="flex items-center text-navy-500">
+                                <i data-feather="users" class="h-4 w-4 mr-2"></i>
+                                <span>Equipo de Investigación</span>
+                            </div>
+                            <div class="mt-4">
+                                <button class="text-burgundy-700 hover:text-burgundy-800 font-medium text-sm flex items-center">
+                                    <i data-feather="calendar" class="h-4 w-4 mr-1"></i>
+                                    Añadir a mi calendario
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="text-burgundy-700 font-bold text-xl">15 Abr, 2024</div>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">16:00 - 18:30</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-navy-800 mb-2">Seminario: Desafíos de la Democracia en América Latina</h3>
+                            <p class="text-navy-600 mb-4">Seminario abierto con ponentes invitados de la Universidad del Norte y del Instituto de Estudios Políticos.</p>
+                            <div class="flex items-center text-navy-500 mb-2">
+                                <i data-feather="map-pin" class="h-4 w-4 mr-2"></i>
+                                <span>Auditorio Principal, Campus Central</span>
+                            </div>
+                            <div class="flex items-center text-navy-500">
+                                <i data-feather="users" class="h-4 w-4 mr-2"></i>
+                                <span>Público general, entrada libre</span>
+                            </div>
+                            <div class="mt-4">
+                                <button class="text-burgundy-700 hover:text-burgundy-800 font-medium text-sm flex items-center">
+                                    <i data-feather="calendar" class="h-4 w-4 mr-1"></i>
+                                    Añadir a mi calendario
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="text-burgundy-700 font-bold text-xl">24 Abr, 2024</div>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">11:00 - 13:00</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-navy-800 mb-2">Conferencia: "Crisis de Representación Política"</h3>
+                            <p class="text-navy-600 mb-4">Conferencia magistral a cargo del Dr. Carlos Ramírez sobre los desafíos contemporáneos de la representación política.</p>
+                            <div class="flex items-center text-navy-500 mb-2">
+                                <i data-feather="map-pin" class="h-4 w-4 mr-2"></i>
+                                <span>Centro Cultural, Sala 2</span>
+                            </div>
+                            <div class="flex items-center text-navy-500">
+                                <i data-feather="users" class="h-4 w-4 mr-2"></i>
+                                <span>Académicos e investigadores</span>
+                            </div>
+                            <div class="mt-4">
+                                <button class="text-burgundy-700 hover:text-burgundy-800 font-medium text-sm flex items-center">
+                                    <i data-feather="calendar" class="h-4 w-4 mr-1"></i>
+                                    Añadir a mi calendario
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="text-burgundy-700 font-bold text-xl">30 Abr, 2024</div>
+                                <span class="bg-burgundy-100 text-burgundy-800 text-xs font-medium px-2.5 py-0.5 rounded">15:00 - 17:00</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-navy-800 mb-2">Reunión General de la Red</h3>
+                            <p class="text-navy-600 mb-4">Reunión mensual de coordinación con todos los miembros de la Red. Presentación de avances y planificación de actividades.</p>
+                            <div class="flex items-center text-navy-500 mb-2">
+                                <i data-feather="map-pin" class="h-4 w-4 mr-2"></i>
+                                <span>Sala de Conferencias, Edificio de Posgrado</span>
+                            </div>
+                            <div class="flex items-center text-navy-500">
+                                <i data-feather="users" class="h-4 w-4 mr-2"></i>
+                                <span>Miembros de la Red</span>
+                            </div>
+                            <div class="mt-4">
+                                <button class="text-burgundy-700 hover:text-burgundy-800 font-medium text-sm flex items-center">
+                                    <i data-feather="calendar" class="h-4 w-4 mr-1"></i>
+                                    Añadir a mi calendario
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Event Section for Members -->
+        <section class="py-12 bg-navy-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl font-bold text-navy-800 mb-2">¿Eres miembro de la Red?</h2>
+                        <p class="text-navy-600">Accede a tu cuenta para programar reuniones y añadir eventos al calendario.</p>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <button class="bg-burgundy-700 hover:bg-burgundy-800 text-white inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2">
+                            <i data-feather="log-in" class="h-4 w-4 mr-2"></i>
+                            Iniciar sesión
+                        </button>
+                        <button class="border border-navy-700 text-navy-800 hover:bg-navy-50 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2">
+                            <i data-feather="calendar" class="h-4 w-4 mr-2"></i>
+                            Solicitar evento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div>
+                    <div class="text-xl font-bold mb-4">RED<span class="text-burgundy-400">DEMOCRACIA</span></div>
+                    <p class="text-navy-100 mb-4">
+                        Red Académica de Investigación sobre Democracia y Espacio Público
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-feather="youtube" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links 1 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">La Red</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#quienes-somos" class="text-navy-100 hover:text-white transition-colors">Quiénes Somos</a></li>
+                        <li><a href="index.html#integrantes" class="text-navy-100 hover:text-white transition-colors">Integrantes</a></li>
+                        <li><a href="index.html#aliados" class="text-navy-100 hover:text-white transition-colors">Aliados</a></li>
+                        <li><a href="index.html#contacto" class="text-navy-100 hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 2 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Investigación</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#proyectos" class="text-navy-100 hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="reuniones.html" class="text-navy-100 hover:text-white transition-colors">Reuniones</a></li>
+                        <li><a href="index.html#repositorios" class="text-navy-100 hover:text-white transition-colors">Repositorios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 3 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Publicaciones</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#publicaciones-academicas" class="text-navy-100 hover:text-white transition-colors">Publicaciones Académicas</a></li>
+                        <li><a href="index.html#articulos-opinion" class="text-navy-100 hover:text-white transition-colors">Artículos de Opinión</a></li>
+                        <li><a href="biblioteca.html" class="text-navy-100 hover:text-white transition-colors">Biblioteca</a></li>
+                        <li><a href="index.html#noticias" class="text-navy-100 hover:text-white transition-colors">Noticias</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-navy-800 mt-8 pt-8 text-center text-navy-300 text-sm">
+                <p>&copy; <span id="current-year"></span> Red Académica de Investigación sobre Democracia y Espacio Público. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuIcon = mobileMenuButton.querySelector('svg');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle between menu and x icon
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenuIcon.setAttribute('data-feather', 'menu');
+                } else {
+                    mobileMenuIcon.setAttribute('data-feather', 'x');
+                }
+                feather.replace();
+            });
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Calendar views functionality
+            const viewButtons = document.querySelectorAll('.view-button');
+            const monthView = document.getElementById('month-view');
+            const agendaView = document.getElementById('agenda-view');
+            const upcomingView = document.getElementById('upcoming-view');
+            
+            viewButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    viewButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.remove('bg-burgundy-700');
+                        btn.classList.remove('text-white');
+                        btn.classList.add('bg-gray-100');
+                        btn.classList.add('text-navy-700');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    this.classList.add('bg-burgundy-700');
+                    this.classList.add('text-white');
+                    this.classList.remove('bg-gray-100');
+                    this.classList.remove('text-navy-700');
+                    
+                    // Show the corresponding view
+                    const viewType = this.textContent.trim().toLowerCase();
+                    monthView.classList.add('hidden');
+                    agendaView.classList.add('hidden');
+                    upcomingView.classList.add('hidden');
+                    
+                    if (viewType === 'mes') {
+                        monthView.classList.remove('hidden');
+                    } else if (viewType === 'agenda') {
+                        agendaView.classList.remove('hidden');
+                    } else if (viewType === 'próximos') {
+                        upcomingView.classList.remove('hidden');
+                    }
+                });
+            });
+            
+            // Initialize first button as active
+            viewButtons[0].classList.add('bg-burgundy-700');
+            viewButtons[0].classList.add('text-white');
+            viewButtons[0].classList.remove('bg-gray-100');
+            viewButtons[0].classList.remove('text-navy-700');
+            
+            // Set current month display
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            let currentDate = new Date();
+            let currentMonth = currentDate.getMonth();
+            let currentYear = currentDate.getFullYear();
+            
+            const currentMonthDisplay = document.getElementById('current-month-display');
+            const prevMonthButton = document.getElementById('prev-month');
+            const nextMonthButton = document.getElementById('next-month');
+            
+            function updateMonthDisplay() {
+                currentMonthDisplay.textContent = `${months[currentMonth]} ${currentYear}`;
+            }
+            
+            prevMonthButton.addEventListener('click', function() {
+                currentMonth--;
+                if (currentMonth < 0) {
+                    currentMonth = 11;
+                    currentYear--;
+                }
+                updateMonthDisplay();
+                // Here you would also update the calendar grid
+            });
+            
+            nextMonthButton.addEventListener('click', function() {
+                currentMonth++;
+                if (currentMonth > 11) {
+                    currentMonth = 0;
+                    currentYear++;
+                }
+                updateMonthDisplay();
+                // Here you would also update the calendar grid
+            });
+            
+            // Initialize month display
+            updateMonthDisplay();
+        });
+    </script>
+</body>
+</html>

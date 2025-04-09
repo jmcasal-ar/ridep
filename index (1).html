@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED DEMOCRACIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-navy-800">RED<span class="text-burgundy-700">DEMOCRACIA</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            La Red
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="index.html#quienes-somos" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Quiénes Somos</a>
+                            <a href="index.html#integrantes" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Integrantes</a>
+                            <a href="aliados.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Aliados</a>
+                            <a href="index.html#contacto" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Investigación
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="proyectos.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Proyectos</a>
+                            <a href="reuniones.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Reuniones</a>
+                            <a href="repositorios.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Repositorios</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Publicaciones
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="publicaciones.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Publicaciones Académicas</a>
+                            <a href="articulos.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Artículos de Opinión</a>
+                            <a href="biblioteca.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Biblioteca</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Noticias y Actividades
+                            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                        </button>
+                        <div class="submenu">
+                            <a href="noticias.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Noticias</a>
+                            <a href="eventos.html" class="block px-4 py-2 text-sm text-navy-700 hover:bg-navy-50">Eventos</a>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- Login Button -->
+                <div class="hidden md:block">
+                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-navy-700 bg-white hover:bg-navy-50 h-10 px-4 py-2 text-navy-800">
+                        Iniciar Sesión
+                    </button>
+                </div>
+                
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button type="button" class="text-navy-800" id="mobileMenuToggle">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="md:hidden bg-white shadow-lg py-2 hidden">
+            <div class="container mx-auto px-4">
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">La Red</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="index.html#quienes-somos" class="block py-2 text-navy-700 hover:text-navy-500">Quiénes Somos</a>
+                        <a href="index.html#integrantes" class="block py-2 text-navy-700 hover:text-navy-500">Integrantes</a>
+                        <a href="aliados.html" class="block py-2 text-navy-700 hover:text-navy-500">Aliados</a>
+                        <a href="index.html#contacto" class="block py-2 text-navy-700 hover:text-navy-500">Contacto</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Investigación</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="proyectos.html" class="block py-2 text-navy-700 hover:text-navy-500">Proyectos</a>
+                        <a href="reuniones.html" class="block py-2 text-navy-700 hover:text-navy-500">Reuniones</a>
+                        <a href="repositorios.html" class="block py-2 text-navy-700 hover:text-navy-500">Repositorios</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Publicaciones</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="publicaciones.html" class="block py-2 text-navy-700 hover:text-navy-500">Publicaciones Académicas</a>
+                        <a href="articulos.html" class="block py-2 text-navy-700 hover:text-navy-500">Artículos de Opinión</a>
+                        <a href="biblioteca.html" class="block py-2 text-navy-700 hover:text-navy-500">Biblioteca</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="font-medium text-navy-800 py-2">Noticias y Actividades</div>
+                    <div class="pl-4 border-l-2 border-navy-100">
+                        <a href="noticias.html" class="block py-2 text-navy-700 hover:text-navy-500">Noticias</a>
+                        <a href="eventos.html" class="block py-2 text-navy-700 hover:text-navy-500">Eventos</a>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                        Iniciar Sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container mx-auto hero-content">
+                <h1 class="hero-title">
+                    Red Académica de Investigación sobre Democracia y Espacio Público
+                </h1>
+                <p class="hero-description">
+                    Promoviendo la investigación académica y el debate público sobre los desafíos de la democracia contemporánea
+                </p>
+                <div class="hero-buttons">
+                    <a href="#quienes-somos" class="btn-primary">
+                        Conocer más
+                    </a>
+                    <a href="publicaciones.html" class="btn-outline">
+                        Nuestras publicaciones
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quienes Somos Section -->
+        <section id="quienes-somos" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">¿Quiénes Somos?</h2>
+                <div class="max-w-3xl mx-auto text-center mt-8">
+                    <p class="text-lg text-navy-700 mb-6">
+                        Somos una red académica interdisciplinaria comprometida con el estudio de la democracia y el espacio público en América Latina.
+                    </p>
+                    <p class="text-lg text-navy-700 mb-6">
+                        Nuestro objetivo es contribuir al desarrollo del conocimiento científico sobre los procesos democráticos y su relación con los espacios de participación ciudadana, así como fomentar el diálogo entre la academia, los actores políticos y la sociedad civil.
+                    </p>
+                    <p class="text-lg text-navy-700">
+                        Integrada por investigadores de diversas instituciones académicas de la región, RED DEMOCRACIA busca promover la investigación colaborativa, la formación de recursos humanos y la incidencia en el debate público.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Integrantes Section -->
+        <section id="integrantes" class="py-16 bg-navy-50">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">Integrantes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <!-- Integrante 1 -->
+                    <div class="card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 rounded-full bg-navy-100 flex items-center justify-center mr-4">
+                                <i data-lucide="user" class="h-8 w-8 text-navy-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-800">Dra. María Rodríguez</h3>
+                                <p class="text-navy-600">Directora de Investigación</p>
+                            </div>
+                        </div>
+                        <p class="text-navy-700">Especialista en teoría política y procesos democráticos en América Latina. Universidad Nacional Autónoma de México.</p>
+                    </div>
+                    
+                    <!-- Integrante 2 -->
+                    <div class="card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 rounded-full bg-navy-100 flex items-center justify-center mr-4">
+                                <i data-lucide="user" class="h-8 w-8 text-navy-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-800">Dr. Carlos Mendoza</h3>
+                                <p class="text-navy-600">Investigador Senior</p>
+                            </div>
+                        </div>
+                        <p class="text-navy-700">Investigador en políticas públicas y participación ciudadana. Universidad de Buenos Aires.</p>
+                    </div>
+                    
+                    <!-- Integrante 3 -->
+                    <div class="card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 rounded-full bg-navy-100 flex items-center justify-center mr-4">
+                                <i data-lucide="user" class="h-8 w-8 text-navy-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-800">Dra. Ana Gutiérrez</h3>
+                                <p class="text-navy-600">Coordinadora de Proyectos</p>
+                            </div>
+                        </div>
+                        <p class="text-navy-700">Doctora en Ciencia Política con especialidad en movimientos sociales y espacio público. Universidad de Chile.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="integrantes.html" class="inline-block btn-primary">
+                        Ver todos los integrantes
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Proyectos Section -->
+        <section id="proyectos" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">Proyectos de Investigación</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <!-- Proyecto 1 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-burgundy-100 flex items-center justify-center">
+                            <i data-lucide="bar-chart" class="h-16 w-16 text-burgundy-700"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Democracia Digital</h3>
+                            <p class="text-navy-700 mb-4">Análisis de las nuevas formas de participación ciudadana a través de plataformas digitales.</p>
+                            <a href="proyectos.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-blue-100 flex items-center justify-center">
+                            <i data-lucide="landmark" class="h-16 w-16 text-blue-800"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Instituciones Democráticas</h3>
+                            <p class="text-navy-700 mb-4">Estudio comparado sobre el funcionamiento y legitimidad de las instituciones democráticas en la región.</p>
+                            <a href="proyectos.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 3 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-green-100 flex items-center justify-center">
+                            <i data-lucide="users" class="h-16 w-16 text-green-800"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Movimientos Sociales</h3>
+                            <p class="text-navy-700 mb-4">Investigación sobre el impacto de los movimientos sociales en la calidad de la democracia.</p>
+                            <a href="proyectos.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="proyectos.html" class="inline-block btn-primary">
+                        Ver todos los proyectos
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Noticias Section -->
+        <section id="noticias" class="py-16 bg-navy-50">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">Noticias Recientes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <!-- Noticia 1 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-navy-100"></div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-navy-600 mb-2">
+                                <i data-lucide="calendar" class="h-4 w-4 mr-1"></i>
+                                <span>15 de abril, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Conferencia Internacional sobre Democracia</h3>
+                            <p class="text-navy-700 mb-4">RED DEMOCRACIA organiza la Conferencia Internacional sobre Democracia y Espacio Público en América Latina.</p>
+                            <a href="noticias.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia 2 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-navy-100"></div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-navy-600 mb-2">
+                                <i data-lucide="calendar" class="h-4 w-4 mr-1"></i>
+                                <span>2 de abril, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Nueva publicación: "Democracia en crisis"</h3>
+                            <p class="text-navy-700 mb-4">Lanzamiento del libro colectivo "Democracia en crisis: Desafíos y oportunidades en el siglo XXI".</p>
+                            <a href="noticias.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia 3 -->
+                    <div class="card overflow-hidden">
+                        <div class="h-48 bg-navy-100"></div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-navy-600 mb-2">
+                                <i data-lucide="calendar" class="h-4 w-4 mr-1"></i>
+                                <span>25 de marzo, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-800 mb-2">Convocatoria para investigadores</h3>
+                            <p class="text-navy-700 mb-4">Se abre convocatoria para integrar el nuevo proyecto de investigación sobre transparencia y participación ciudadana.</p>
+                            <a href="noticias.html" class="text-burgundy-700 font-medium hover:text-burgundy-800 flex items-center">
+                                Leer más
+                                <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="noticias.html" class="inline-block btn-primary">
+                        Ver todas las noticias
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contacto Section -->
+        <section id="contacto" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">Contacto</h2>
+                <div class="max-w-xl mx-auto mt-8">
+                    <div class="bg-navy-50 rounded-lg p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label for="nombre" class="block text-navy-800 font-medium mb-2">Nombre completo</label>
+                                <input type="text" id="nombre" class="w-full px-4 py-2 border border-navy-100 rounded-md focus:outline-none focus:ring-2 focus:ring-burgundy-600">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-navy-800 font-medium mb-2">Correo electrónico</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-navy-100 rounded-md focus:outline-none focus:ring-2 focus:ring-burgundy-600">
+                            </div>
+                            <div class="mb-4">
+                                <label for="asunto" class="block text-navy-800 font-medium mb-2">Asunto</label>
+                                <input type="text" id="asunto" class="w-full px-4 py-2 border border-navy-100 rounded-md focus:outline-none focus:ring-2 focus:ring-burgundy-600">
+                            </div>
+                            <div class="mb-6">
+                                <label for="mensaje" class="block text-navy-800 font-medium mb-2">Mensaje</label>
+                                <textarea id="mensaje" rows="4" class="w-full px-4 py-2 border border-navy-100 rounded-md focus:outline-none focus:ring-2 focus:ring-burgundy-600"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn-primary w-full">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-burgundy-100 text-burgundy-700 mb-4">
+                                <i data-lucide="mail" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="text-navy-800 font-medium mb-2">Correo</h3>
+                            <p class="text-navy-700">contacto@redemocracia.org</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-burgundy-100 text-burgundy-700 mb-4">
+                                <i data-lucide="map-pin" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="text-navy-800 font-medium mb-2">Dirección</h3>
+                            <p class="text-navy-700">Ciudad Universitaria, México</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-burgundy-100 text-burgundy-700 mb-4">
+                                <i data-lucide="phone" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="text-navy-800 font-medium mb-2">Teléfono</h3>
+                            <p class="text-navy-700">+52 55 1234 5678</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div>
+                    <div class="text-xl font-bold mb-4">RED<span class="text-burgundy-400">DEMOCRACIA</span></div>
+                    <p class="text-navy-100 mb-4">
+                        Red Académica de Investigación sobre Democracia y Espacio Público
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-navy-100 hover:text-white transition-colors">
+                            <i data-lucide="youtube" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links 1 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">La Red</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#quienes-somos" class="text-navy-100 hover:text-white transition-colors">Quiénes Somos</a></li>
+                        <li><a href="index.html#integrantes" class="text-navy-100 hover:text-white transition-colors">Integrantes</a></li>
+                        <li><a href="aliados.html" class="text-navy-100 hover:text-white transition-colors">Aliados</a></li>
+                        <li><a href="index.html#contacto" class="text-navy-100 hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 2 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Investigación</h3>
+                    <ul class="space-y-2">
+                        <li><a href="proyectos.html" class="text-navy-100 hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="reuniones.html" class="text-navy-100 hover:text-white transition-colors">Reuniones</a></li>
+                        <li><a href="repositorios.html" class="text-navy-100 hover:text-white transition-colors">Repositorios</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 3 -->
+                <div>
+                    <h3 class="font-medium text-lg mb-4">Publicaciones</h3>
+                    <ul class="space-y-2">
+                        <li><a href="publicaciones.html" class="text-navy-100 hover:text-white transition-colors">Publicaciones Académicas</a></li>
+                        <li><a href="articulos.html" class="text-navy-100 hover:text-white transition-colors">Artículos de Opinión</a></li>
+                        <li><a href="biblioteca.html" class="text-navy-100 hover:text-white transition-colors">Biblioteca</a></li>
+                        <li><a href="noticias.html" class="text-navy-100 hover:text-white transition-colors">Noticias</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-navy-800 mt-8 pt-8 text-center text-navy-300 text-sm">
+                <p>&copy; <span id="currentYear"></span> Red Académica de Investigación sobre Democracia y Espacio Público. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Current year for footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle between menu and X icon
+            const icon = mobileMenuToggle.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            
+            // Recreate icons after changing
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
